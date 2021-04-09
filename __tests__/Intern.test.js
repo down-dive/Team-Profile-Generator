@@ -37,12 +37,6 @@ test("gets intern's id", () => {
     expect(intern.getId()).toEqual(expect.stringContaining(intern.id.toString()))
 });
 
-test("gets intern's email", () => {
-    const intern = new Intern('email');
-
-    expect(intern.getEmail()).toEqual(expect.stringContaining('email'))
-})
-
 test('gets interns school', () => {
     const intern = new Intern('school');
 

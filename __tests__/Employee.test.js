@@ -16,7 +16,7 @@ test('checks employees id', () => {
 test('checks employees email', () => {
     const employee = new Employee('name', 6, 'testemail');
 // console.table(employee)
-    expect(employee.email).toEqual(expect.stringContaining('testemail'));
+    expect(employee.email).toBe('testemail');
 });
 
 test("gets employee's name", () => {
@@ -30,12 +30,6 @@ test("gets employee's id", () => {
 
     expect(employee.getId()).toEqual(expect.stringContaining(employee.id.toString()))
 });
-
-test("gets employee's email", () => {
-    const employee = new Employee('email');
-
-    expect(employee.getEmail()).toEqual(expect.stringContaining('email'))
-})
 
 test("gets employee's role", () => {
     const employee = new Employee('Employee');
