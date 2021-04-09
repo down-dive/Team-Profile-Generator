@@ -28,7 +28,7 @@ If you want to contribute please contact Yev
 No tests
 
 ## Video recording
-Video recording located in the folder in the root of directory assets/vides/readme-generator
+Video recording located in the folder in the root of directory assets/vides/team-profile-generator
 
 ## Credits
 GitHub: 
