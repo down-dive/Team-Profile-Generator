@@ -2,9 +2,11 @@ const { listenerCount } = require('events');
 const fs = require('fs')
 const inquirer = require('inquirer');
 const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
 const generatePage = require('./src/page-template');
 const writeFile = require('./utils/generate-site')
-// const manager = require('./lib/Manager')
+
 // let position = ''
 const array = []
 
@@ -71,9 +73,10 @@ const promptManager = () => {
   ])
     .then(employee => {
       const manager = new Manager(employee.name, employee.id, employee.email, employee.officeNumber)
-
       array.push(manager);
-      makeChoice(employee)
+      if(employee.confirmAddPositions == true){
+        makeChoice(employee)
+      } else (makeItWork())     
     })
 }
 
@@ -158,10 +161,11 @@ const promptEngineer = () => {
     }
   ])
     .then(employee => {
-      // console.log(employee)
-      array.push(employee);
-      makeChoice(employee)
-
+      const engineer = new Engineer(employee.name, employee.id, employee.email, employee.github)
+      array.push(engineer);
+      if(employee.confirmAddPositions == true){
+        makeChoice(employee)
+      } else (makeItWork())
     })
 }
 
@@ -227,10 +231,11 @@ const promptIntern = () => {
     }
   ])
     .then(employee => {
-      // console.log(employee)
-      array.push(employee);
-      makeChoice(employee)
-
+      const intern = new Intern(employee.name, employee.id, employee.email, employee.school)
+      array.push(intern);
+      if(employee.confirmAddPositions == true){
+        makeChoice(employee)
+      } else (makeItWork())     
     })
 }
 
@@ -248,16 +253,17 @@ const promptIntern = () => {
 // }
 
 const makeItWork = () => {
-  promptManager().then((res) => {
-    console.log(array)
-    fs.writeFile('./dist/index.html', generatePage(res.name, res.id, res.email, res.officeNumber), err => {
-      if (err) throw new Error(err);
+  
+  //   console.log("I AM RIGHT HERER!!!!!!!!!!!!!!!" + promptManager())
+  console.log(array)
+  fs.writeFile('./dist/index.html', generatePage(array), err => {
+    if (err) throw new Error(err);
 
-    })
   })
 
+
 }
-makeItWork();
+promptManager()
 // promptEmployee()
 // .then(promptEngineer)
 // .then(promptIntern)
