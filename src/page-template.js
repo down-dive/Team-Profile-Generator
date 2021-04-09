@@ -88,6 +88,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
           <title>Portfolio Demo</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
           <link rel="stylesheet" href="style.css">
         </head>
@@ -106,7 +107,7 @@
 
           </main>
           <footer class="container text-center py-3">
-            <h3 class="text-dark">&copy;2020 by</h3>
+            <h3 class="text-dark">&copy;2021 by Yevgeniya Terlyuk</h3>
           </footer>
         </body>
         </html>
