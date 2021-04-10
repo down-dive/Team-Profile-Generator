@@ -44,9 +44,3 @@ test("gets engineer's role", () => {
 
 })
 
-test("gets engineers github", () => {
-    const engineer = new Engineer('github');
-
-    expect(engineer.getGithub()).toEqual(expect.stringContaining('github'))
-
-})
