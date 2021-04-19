@@ -7,7 +7,6 @@ const Intern = require('./lib/intern');
 const generatePage = require('./src/page-template');
 const writeFile = require('./utils/generate-site')
 
-// let position = ''
 const array = []
 
 const promptManager = () => {
@@ -239,22 +238,8 @@ const promptIntern = () => {
     })
 }
 
-
-
-// const makeItWork = () => {
-//   promptManager().then((res) => {
-//     console.log(array)
-//   })
-
-//   fs.writeFile('./dist/index.html', generatePage(res.name, res.id, res.email, res.officeNumber), err => {
-//       if (err) throw new Error(err);
-
-//   })
-// }
-
 const makeItWork = () => {
-  
-  //   console.log("I AM RIGHT HERER!!!!!!!!!!!!!!!" + promptManager())
+
   console.log(array)
   fs.writeFile('./dist/index.html', generatePage(array), err => {
     if (err) throw new Error(err);
@@ -264,7 +249,3 @@ const makeItWork = () => {
 
 }
 promptManager()
-// promptEmployee()
-// .then(promptEngineer)
-// .then(promptIntern)
-// .then(promptManager)
