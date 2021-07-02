@@ -19,7 +19,7 @@ To install this application:
 * run the application in node
 
 ## Usage
-An easy and simple way to generate a team web-page with with contact informaiton for all employess. It is requiring to add a manager that has a name, id, email and office number fields. Also includes an option to add an engineers and interns to the page with additional fiels reqiored such as github name and a school accordingly.
+An easy and simple way to generate a team web-page with contact informaiton for all employess. It is requiring to add a manager that has a name, id, email and office number fields. Also includes an option to add an engineers and interns to the page with additional fields required such as github name and a school.
 
 ## Contributions
 If you want to contribute please contact Yev
