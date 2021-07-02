@@ -35,4 +35,4 @@ GitHub:
 * https://www.github.com/down-dive
 
 ## License
-@ Yevgeniya Terlyuk
+Copyright (c) 2021 Yevgeniya Terlyuk
