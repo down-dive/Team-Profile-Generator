@@ -28,7 +28,7 @@ If you want to contribute please contact Yev
 No tests
 
 ## Video recording
-Video recording located in the folder:
+Video recording:
 [Link to Demo](https://drive.google.com/file/d/10eALBL3QQWxx2Q0IG2vw2Wkp4t5XA4YO/view?usp=sharing)
 ## Credits
 GitHub: 
