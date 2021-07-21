@@ -28,7 +28,8 @@ If you want to contribute please contact Yev
 No tests
 
 ## Video recording
-Video recording located in the folder in the root of directory assets/vides/team-profile-generator
+Video recording: 
+![alt=team-profile-generator](./assets/vides/team-profile-generator.mov)
 
 ## Credits
 GitHub: 
