@@ -28,8 +28,7 @@ If you want to contribute please contact Yev
 No tests
 
 ## Video recording
-Video recording: 
-![alt=team-profile-generator](./assets/vides/team-profile-generator.mov)
+Video recording located in the folder: assets/videos/team-profile-generator.mov
 
 ## Credits
 GitHub: 
